@@ -1,0 +1,200 @@
+.login_box{background-color:#fafafa;}
+.nc-login-layout{
+    width:1000px;
+    margin:0px auto;
+    padding: 60px 0;
+}
+.nc-login-layout .left-pic{
+    float:left;
+}
+.nc-login-layout .nc-login{
+    float:right;
+    padding:20px 20px 40px;
+    width:440px;
+    background: #fff;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+.nc-login .tabs-container {
+    margin-top: 30px;
+    padding: 0 40px 20px 40px;
+}
+.nc-login .tabs-container dd{
+    width:285px;
+}
+.nc-login .tabs-container dd input{
+    width:100%;
+}
+.nc-login .tabs-container .handle-div{
+    padding-top:15px;
+    height:35px;
+   
+}
+.nc-login .tabs-container .handle-div .check_box{
+    float:left;
+}
+.handle-div .check_box input{
+    vertical-align:middle;
+}
+.handle-div .check_box em{
+    display:none;
+    margin-top:-7px;
+    margin-left:10px;
+    color:rgb(247, 15, 15);
+}
+.handle-div .check_box em.show{
+    display:inline-block;
+    vertical-align:middle;
+}
+.nc-login .tabs-container .handle-div .forget{
+    float:right;
+    color:#666;
+    text-decoration: none;
+}
+.nc-login .tabs-container .handle-div .forget:hover{color: #F32613;}
+.nc-login-api{
+    width:360px;
+    margin:0 auto;
+}
+.nc-login-api h4{
+    margin-bottom: 10px;
+}
+.nc-login-api a{
+    display: inline-block;
+    width: 80px;
+    color: #999;
+    text-decoration: none;
+    
+}
+.nc-login-api a.qq:hover {
+    color: #3EB6E8;
+    
+}
+.nc-login-api a.wx:hover {
+    color: rgb(27, 201, 79);
+    
+}
+.nc-login-api a i {
+    background: url(../images/login_pic.png) no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    *display: inline;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    *zoom: 1;
+}
+.nc-login-api a.qq i {
+    background-position: -96px 0;
+}
+.nc-login-api a.wx i {
+    background-position: -160px 0;
+}
+.nc-login-form dl{
+    position: relative;
+}
+.nc-login-form .dl_success{
+    border: 1px solid #5ac303;
+}
+.nc-login-form .dl_error{
+    border-color:rgb(247, 15, 15);
+}
+.nc-login-form dl label{
+    position: absolute;
+    top:4px;
+    left:265px;
+    padding:8px;
+    height:27px;
+    right:-130px;
+    width:115px;
+    line-height:27px; 
+    display:none;
+ }
+ .mobile .nc-login-form label{
+     width:142px;
+ }
+ .nc-login-form label.error{
+    display:block;
+    background:#fcb4b4;
+    color:rgb(247, 15, 15);
+}
+.nc-login-form label.success{
+    display:block;
+    background:#a0ebaa;
+    color:#14ca14;
+}
+.nc-login-form label .icon-exclamation-sign:before{
+    display:inline-block;
+    margin-right:8px;
+    vertical-align:middle;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    border-radius:50%;
+    text-align:center;
+    font-style:normal;
+}
+.nc-login-form label.error .icon-exclamation-sign:before {
+    content: "X";
+    border:1px solid rgb(247, 15, 15);
+}
+.nc-login-form label.success .icon-exclamation-sign:before{
+    content: "√";
+    border:1px solid #14ca14;
+}
+
+/*登录错误提示信息*/
+.append_parent{
+    display:none;
+    position: fixed;
+    z-index: 1000; 
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    background-color:rgba(0,0,0,.3);
+}
+.append_parent .dialog_body{
+    position:relative;
+    z-index:1001;
+    top:50%;
+    left:50%;
+    width:400px;
+    height:170px;
+    background:#fff;
+    transform:translate(-50%,-50%);
+}
+.dialog_head{
+    height:21px;
+    line-height:21px;
+    padding:5px;
+    background:#f0f0e0;
+}
+.dialog_head .dialog_close_button{
+    float:right;
+    width:21px;
+    height:21px;
+    text-align:center;
+    background:#fff;
+    
+}
+.append_parent .dialog_body .eject_con{
+    height:85px;
+    line-height:85px;
+    font-size:16px;
+    text-align:center;
+}
+.append_parent .dialog_body  .dialog_buttons_bar{
+    height:51px;
+    text-align:center;
+    line-height:51px;
+}
+.append_parent .dialog_body a.dialog-bottom-btn{
+    color:#666;
+    
+    padding: 10px 15px;
+    border: 1px solid #666;
+    text-decoration:none;
+    border-radius: 5px; 
+}
