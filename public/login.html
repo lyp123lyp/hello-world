@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css"></link>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="header-wrap">
+        <header class="public-head-layout wrapper">
+            <h1 class="site-logo"><a href="http://www.hmsc.com"><img src="./images/logo.png" class="pngFix"></a></h1>
+            <div class="nc-regist-now">
+                <span class="avatar"><img src="./images/default_user_portrait.gif"></span>
+                <span>您好，欢迎来到惠民商城<br>已注册的会员请登录，或立即<a title="" href="/register.html" class="register">注册新会员</a></span>
+            </div>
+        </header>
+    </div>
+    <div class="login_box">
+        <!-- <div style="display:table;"></div> -->
+        <div class="nc-login-layout clearfix table">
+            <div class="left-pic"><img src="./images/2.jpg" border="0"></div>
+            <div class="nc-login">
+                <div class="arrow"></div>
+                    <div class="nc-login-mode">
+                        <ul class="tabs-nav clearfix">
+                            <li><a href="#default" class="tabulous_active">用户登录<i></i></a></li><span class="tabulousclear"></span>
+                        </ul>
+                        <div id="tabs_container" class="tabs-container" style="height: 199px;">
+                            <div id="default" class="tabs-content">
+                                <form id="login_form" class="nc-login-form" method="post" onsubmit="return false;">
+                                    <input type="hidden" name="formhash" value="LYY1NS07RlC1TD28vMHYUzNCMR2RFav">            <input type="hidden" name="form_submit" value="ok">
+                                    <input name="nchash" type="hidden" value="">
+                                    <dl>
+                                    <dt>账&nbsp;&nbsp;&nbsp;号：</dt>
+                                    <dd>
+                                        <input type="text" class="text" autocomplete="off" name="user_name" tipmsg="可使用已注册的用户名或手机号登录" id="user_name" value="dongdong" placeholder="可使用已注册的用户名或手机号登录" style="color: rgb(187, 187, 187);">
+                                        <label for="user_name" class=""><i class="icon-exclamation-sign"></i>用户名不正确</label>
+                                    </dd>
+                                    </dl>
+                                    <dl>
+                                    <dt>密&nbsp;&nbsp;&nbsp;码：</dt>
+                                    <dd>
+                                        <input type="password" class="text" name="password" autocomplete="off" tipmsg="6-20个大小写英文字母、符号或数字" id="password" value="l458l458" placeholder="6-20个大小写英文字母、符号或数字" style="color: rgb(187, 187, 187);">
+                                        <label for="password" class=""><i class="icon-exclamation-sign"></i>密码不正确</label>
+                                    </dd>
+                                    </dl>
+                                    <div class="handle-div">
+                                        <span class="auto check_box"><input type="checkbox" class="checkbox" name="auto_login" value="1">七天自动登录<em>请勿在公用电脑上使用</em></span>
+                                        <a class="forget" href="javascript:;">忘记密码？</a></div>
+                                        <div class="submit-div">
+                                        <input type="submit" class="submit" value="登&nbsp;&nbsp;&nbsp;录">
+                                        <input type="hidden" value="" name="ref_url">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nc-login-api" id="demo-form-site">
+                        <h4>使用合作网站账号登录：</h4>
+                        <a href="https://graph.qq.com/oauth2.0/show?which=error&display=pc&error=100010&which=Login&display=pc&response_type=code&client_id=101278432" title="QQ账号登录" class="qq"><i></i>QQ</a>
+                        <a href="javascript:void(0);" title="微信账号登录" class="wx"><i></i>微信</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+        </div>
+    </div>
+    <div id="append_parent" class="append_parent">
+        <div class="dialog_body" id="fwin_dialog" initialized="true">
+          
+            <h3 class="dialog_head"><span class="dialog_title">
+                <span class="dialog_title_icon">提示信息</span>
+                <span class="dialog_close_button" id="fwin_dialog_close" onclick="hideMenu('fwin_dialog', 'dialog')" title="关闭">X</span>
+            </h3>
+            <div class="eject_con eject_con1">
+                <div class="dialog_message_contents">
+                    <span class="alert_error"></span>
+                    <!-- 您的操作过于频繁，请稍后再试 -->
+                </div>
+            </div>
+            <div class="dialog_buttons_bar">
+                <a href="javascript:void(0)" id="fwin_dialog_submit" class="dialog-bottom-btn dialog-bottom-btn mr10">确定</a>
+            </div>
+        </div>
+    </div>
+    <div class="wwi-footer">
+        <div id="cti" class="wrapper"></div>
+        <div id="footer">
+            <div class="wrapper">
+                <div class="screen clearfix footerW">
+                    <div class="fl right-flag">
+                        <a href="http://www.hmsc.com" target="_blank" rel="nofollow">
+                            <img src="./images/credit-flag3.png">
+                        </a>
+                        <a href="http://www.hmsc.com/" target="_blank" rel="nofollow">
+                            <img src="./images/isc2.png">
+                        </a>
+                    </div>
+                    <div class="fl about-us">
+                        <p>
+                            <a href="http://www.hmsc.com">返回首页</a>
+                            <span>|</span> 
+                            <a target="_blank" href="javascript:;">商家入驻</a>
+                            <span>|</span> 
+                            <a href="/member/?act=article&amp;article_id=23">联系我们</a>
+                            <span>|</span> <a href="javascript:;">关于惠民商城</a>
+                            <span>|</span>
+                            <a href="javascript">友情链接</a>
+                        </p>
+                        <p>CopyRight © 20017-2019 惠民商城 <a href="javascript" target="_blank" style="color:#666">湘B2-20052010号-1</a> NewPower Co. 版权所有 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>惠民商城-商品详情页</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type=" text/css" href="./css/productDetail.css"/>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/header.js"></script>
+</head>
+
+<body>
+    
+    <script>     function DrawImage() { }</script>
+ 
+    <header id="header" Class="headerHeight"></header>
+    <!-- 面包屑 -->
+    <div class="w-main">
+        <div class="c-location container">
+            <a class="a-grey" href="./index.html">首页</a>
+            <span>&gt;</span>
+            <a class="a-grey" href="./products.html?category=生鲜食品" target="_blank">生鲜食品</a>
+            <span>&gt;</span>
+        </div>
+    </div>
+    <div class="w-main mb20">
+        <div class="clrfix clearfix shopinfo" style="position:relative;">
+            <!-- 店铺信息 -->
+            <div style="position: absolute; z-index: 2; top: 39px; right: -1px;">
+                <div class="ncs-info">
+                    <div class="title">
+                        <h4>
+                            <a href="JavaScript:;">独角兽专营店</a>
+                        </h4>
+                    </div>
+                    <div class="content">
+                        <div class="ncs-detail-rate">
+                            <ul>
+                                <li>
+                                    <h5>描述</h5>
+                                    <div class="" title="">5.0
+                                        <i></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>服务</h5>
+                                    <div class="" title="">5.0
+                                        <i></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>物流</h5>
+                                    <div class="" title="">5.0
+                                        <i></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btns">
+                            <a href="http://www.hangowa.com/shop-56.html" class="goto">进店逛逛</a>
+                            <a href="javascript:collect_store('56','count','store_collect')">收藏店铺
+                                <span>(
+                                    <em nctype="store_collect">0</em>)</span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="pd-name">
+                    <h1>
+                        抚参堂 人参狮子头 150g/个</h1>
+                        <div class="subtitle" style="">描述信息</div>
+                </div>
+                <ul class="pdinfo-summary">
+                    <li>
+                        <div class="dt">商&nbsp;城&nbsp;价：</div>
+                        <div class="dd">
+                            <strong class="f-orange" id="mallPrice1">¥24.00</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dt">促销信息：</div>
+                        <div class="dd">
+                            <p class="pd-sale">
+                                <em class="pd-sale-t">包邮</em>
+                                <em class="tips f-orange">本店所有商品免邮</em>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="mid_li">
+                        <div class="dt">评 &nbsp;　价：</div>
+                        <div class="dd">
+                            <a href="#comment" class="a-blue">已有0人评论</a>
+                        </div>
+                    </li>
+                    <li class="hide">
+                        <div class="dt">配&nbsp;送&nbsp;至：</div>
+                        <div class="dd">
+                            <div class="citysel #mhover" id="js-selCity" data-code="">
+                                <p class="cityDetails">
+                                    <!-- <span id="selValue" class="cityname">请选择收货城市</span>
+                                    <s></s> -->
+                                    <select name="cityDetails11" class="cityDetails1">
+                                        <option value="-1">--请选择--</option>
+                                    </select>
+                                  
+                                    <select name="cityDetails21" class="cityDetails2" style="display:none;">
+                                        <option value="-1">--请选择--</option>
+                                    </select>
+                                    <select name="cityDetails31" class="cityDetails3" style="display: none;">
+                                        <option value="-1">--请选择--</option>
+                                    </select>
+                                </p>
+                                <div class="citylist">
+                                    <s class="close"></s>
+                                    <div class="city-hd">
+                                        <div class="curr">
+                                            <span id="provinceValue" class="cityname">请选择</span>
+                                            <s></s>
+                                        </div>
+                                        <div>
+                                            <span id="cityValue" class="cityname">请选择</span>
+                                            <s></s>
+                                        </div>
+                                    </div>
+                                    <div class="city-bd">
+                                        <ul id="ulProvince">
+                                        </ul>
+                                    </div>
+                                    <div class="city-bd">
+                                        <ul id="ulCity">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <span class="tips f-gray6 left" id="freightMsg"></span> -->
+                            <!-- 配送地址显示 -->
+                            
+                           
+                        </div>
+                    </li>
+                </ul>
+                <div Class="ps_address hide" >
+                    <span class="title">详细地址：</span>
+                    <span class="address">
+                        <input type="text" placeholder="请输入">
+                    </span>
+                </div>
+                <div class="pd-info-status">
+                    <ul class="pd-choose" id="addCart">
+                        <li class="choose-type choose-type1">
+                            <div class="dt">规　　格：</div>
+                            <div class="dd">
+                                <div class="item selected">
+                                    <a href="javascript:;" title="150g/袋" id="goodsSpec28752">150g/袋</a>
+                                    <b></b>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="choose-type choose-type2 ">
+                            <div class="dt">购买数量：</div>
+                            <div class="dd">
+                                <div class="choose-amount">
+                                    <a href="javascript:;" id="arrowbown">-</a>
+                                    <input class="inputtext" id="minimumOrder" value="1">
+                                    <a href="javascript:;" id="arrowup">+</a>
+                                </div>
+                                <span class="tips f-gray9">
+
+                                    库存<span id="p_count"></span>
+                                    <span id="productStockQuantity" style="display:none;">1000</span>
+                                    <i id="givePoints" style="display: none;">【赠送】</i>
+                                </span>
+                                <span class="tips f-orange" id="buyTips"></span>
+                            </div>
+                        </li>
+                        <li class="buycart-btn">
+                            <a href="javascript:;" class="a-btn btn-buynow" id="btnToBuy"></a>
+                            <a href="javascript:;" class="a-btn btn-incart" id="btnAddToCart"></a>
+                            <span class="tips font-yel" id="isBuyed" style="display:none;">本商品已添加至
+                                <a href="http://www.hmsc.com/pay/myCart.jspx" class="a-orange" target="_blank">购物车</a>
+                            </span>
+                        </li>
+                        <li class="shopName">本商品由
+                            <a href="http://www.hmsc.com/shop/16528/index.htm" class="a-blue" target="_blank">抚参堂</a> 店铺配送</li>
+                    </ul>
+                    <div class="pd-addcart" style="display:none;" id="showCart">
+                        <dl class="had-add-tips mb20 clrhz">
+                            <dt>
+                                <i class="c-icon"></i>
+                            </dt>
+                            <dd>
+                                <h2>该商品已成功放入购物车!</h2>
+                                <p>
+                                    <span class="f-gray6">购物车一共有
+                                        <em class="f-orange" id="pNumForCart"></em> 件商品，金额合计
+                                        <em class="f-orange" id="priceForCart"></em> 元</span>
+                                </p>
+                                <p class="had-gocheck">
+                                    <a href="javascript:void(0);" class="a-btn btn-gocheck gobuybtn"></a>
+                                    <a href="javascript:void(0);" class="a-btn btn-goonbuy gombtn"></a>
+                                </p>
+                            </dd>
+                        </dl>
+                        <div class="had-add-more">
+                            <h3 class="left f-gray6">大家还喜欢：</h3>
+                            <!-- <a href="javascript:;" class="right a-blue">换几个更好</a> -->
+                        </div>
+                        <ul class="pd-nopro-list clrhz" id="afterPutCart1">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-box">
+                <div class="sm_md_lg">
+                    <div class="spec-img">
+                        <span class="jqzoom js-midImg">
+                            <img src="">
+                        </span>
+                        <!-- 遮罩层 -->
+                        <div class="mask-up-box">
+                            <div class="mask-up"></div>
+                            <div class="mask"></div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="bigImg">
+                        <!-- 放大镜效果图 -->
+                        <!--背景图放大 -->
+                        <img src="" alt="">
+                    </div>
+                    <div class="spec-list" id="spec-list">
+                        <a href="javascript:;" class="spec-control spec-forward">
+                            <i class="c-icon"></i>
+                        </a>
+                        <a href="javascript:;" class="spec-control spec-backward">
+                            <i class="c-icon"></i>
+                        </a>
+                        <div class="spec-items">
+                            <ul>
+                                <li class="hover js-chgImg hide">
+                                    <a href="javascript:void(0);" rel="{smallimage: 'picture/47fb071610b6466a962b82ebaba52859.gif1.cct88588.com/upload/images/mkProduct/16/10/18/14767629769323812.jpg_320x320.jpg',largeimage: 'picture/47fb071610b6466a962b82ebaba52859.gif1.cct88588.com/upload/images/mkProduct/16/10/18/14767629769323812.jpg'}">
+                                        <img src="" width="60" height="60">
+                                    </a>
+                                </li>
+                                <li class="js-chgImg hide">
+                                    <a href="javascript:void(0);" rel="{smallimage: 'picture/47fb071610b6466a962b82ebaba52859.gif1.cct88588.com/upload/images/mkProduct/16/10/18/147676297721722724.jpg_320x320.jpg',largeimage: 'picture/47fb071610b6466a962b82ebaba52859.gif1.cct88588.com/upload/images/mkProduct/16/10/18/147676297721722724.jpg'}">
+                                        <img src="" width="60" height="60">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="share">
+                    <p>分享到：</p>
+                    <!-- Baidu Button BEGIN -->
+                    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                        <a class="bds_qzone" title="分享到QQ空间" href="javascript:;"></a>
+                        <a class="bds_tsina" title="分享到新浪微博" href="javascript:;"></a>
+                        <a class="bds_tqq" title="分享到腾讯微博" href="javascript:;"></a>
+                        <a class="bds_renren" title="分享到人人网" href="javascript:;"></a>
+                        <a class="bds_kaixin001" title="分享到开心网" href="javascript:;"></a>
+                        <span class="bds_more">更多</span>
+                    </div>
+
+                    <script type="text/javascript">var bds_config = { 'snsKey': { 'tsina': '1832109743', 'tqq': '100224570', 't163': 'JYTF3IG0vDnEMFKE', 'tsohu': 'PWg4w8FDHhLuLt08kOrm' } };</script>
+                    <!-- Baidu Button END -->
+                </div>
+            </div>
+        </div>
+        <div id="content" class="ncs-goods-layout expanded">
+            <div class="ncs-goods-main" id="main-nav-holder">
+                <div class="tabbar pngFix" id="main-nav">
+                    <div class="ncs-goods-title-nav">
+                        <ul id="categorymenu">
+                            <li class="current">
+                                <a id="tabGoodsIntro" href="javascript:;">商品详情</a>
+                            </li>
+                            <li class="">
+                                <a id="tabGoodsRate" href="javascript:;">商品评价
+                                    <em>(0)</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="tabGoodsTraded" href="javascript:;">销售记录
+                                    <em>(0)</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="tabGuestbook" href="javascript:;">购买咨询</a>
+                            </li>
+                        </ul>
+                        <div class="add-cart cart02" style="display: block;">
+
+                            <a href="javascript:void(0);" nctype="addcart_submit" class="addcart" title="加入购物车">
+                                <i class="icon-shopping-cart"></i>加入购物车</a>
+                            <!-- S 加入购物车弹出提示框 -->
+                            <div class="ncs-cart-popup cart-popup02" style="display:none;">
+                                <dl>
+                                    <dt>成功添加到购物车
+                                        <a title="关闭" onclick="$('.ncs-cart-popup').css({'display':'none'});">X</a>
+                                    </dt>
+                                    <dd>购物车共有
+                                        <strong class="bold_num"></strong> 种商品 总金额为：
+                                        <em class="bold_mly"></em>
+                                    </dd>
+                                    <dd class="btns">
+                                        <a href="javascript:void(0);" class="ncbtn-mini ncbtn-mint" onclick="location.href='http://www.hangowa.com/index.php?act=cart'">查看购物车</a>
+                                        <a href="javascript:void(0);" class="ncbtn-mini" value="" onclick="$('.ncs-cart-popup').css({'display':'none'});">继续购物</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- E 加入购物车弹出提示框 -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ncs-intro">
+                    <div class="content bd" id="ncGoodsIntro" style="">
+                        <ul class="nc-goods-sort">
+                            <li>商家货号：</li>
+                            <li>品牌：农谷鲜</li>
+                        </ul>
+                        <div class="ncs-goods-info-content">
+                            <div class="default">
+                                <!-- <img src="http://www.hangowa.com/data/upload/shop/store/goods/15/2018/15_05955026725377004_1280.jpg" alt="image"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ncs-comment">
+                    <div class="ncs-goods-title-bar hd" style="">
+                        <h4>
+                            <a href="javascript:void(0);">商品评价</a>
+                        </h4>
+                    </div>
+                    <div class="ncs-goods-info-content bd" id="ncGoodsRate" style="">
+                        <div class="top">
+                            <div class="rate">
+                                <p>
+                                    <strong>100</strong>
+                                    <sub>%</sub>好评</p>
+                                <span>共有0人参与评分</span>
+                            </div>
+                            <div class="percent">
+                                <dl>
+                                    <dt>好评
+                                        <em>(100%)</em>
+                                    </dt>
+                                    <dd>
+                                        <i style="width: 100%"></i>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>中评
+                                        <em>(80%)</em>
+                                    </dt>
+                                    <dd>
+                                        <i style="width: 80%"></i>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>差评
+                                        <em>(10%)</em>
+                                    </dt>
+                                    <dd>
+                                        <i style="width: 10%"></i>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="btns">
+                                <span>您可对已购商品进行评价</span>
+                                <p>
+                                    <a href="http://www.hangowa.com/?act=member_order&amp;op=index" class="ncbtn ncbtn-grapefruit"
+                                        target="_blank">
+                                        <i class="icon-comment-alt"></i>评价商品</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ncs-goods-title-nav">
+                            <ul id="comment_tab">
+                                <li data-type="all" class="current">
+                                    <a href="javascript:void(0);">商品评价(0)</a>
+                                </li>
+                                <li data-type="1">
+                                    <a href="javascript:void(0);">好评(0)</a>
+                                </li>
+                                <li data-type="2">
+                                    <a href="javascript:void(0);">中评(0)</a>
+                                </li>
+                                <li data-type="3">
+                                    <a href="javascript:void(0);">差评(0)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 商品评价内容部分 -->
+                        <div id="goodseval" class="ncs-commend-main">
+                            <div class="ncs-norecord">暂无符合条件的数据记录</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="ncg-salelog" style="display: none;">
+                    <div class="ncs-goods-title-bar hd" style="">
+                        <h4>
+                            <a href="javascript:void(0);">销售记录</a>
+                        </h4>
+                    </div>
+                    <div class="ncs-goods-info-content bd" id="ncGoodsTraded" style="">
+                        <div class="top">
+                            <div class="price">商&nbsp;&nbsp;城&nbsp;&nbsp;价
+                                <!-- <strong>51.90</strong>元 -->
+                                <span>购买的价格不同可能是由于店铺往期促销活动引起的，详情可以咨询卖家</span>
+                            </div>
+                        </div>
+                        <!-- 成交记录内容部分 -->
+                        <div id="salelog_demo" class="ncs-loading"> </div>
+                    </div>
+                </div>
+                <div class="ncs-consult" style="display:none;">
+                    <div class="ncs-goods-title-bar hd" style="">
+                        <h4>
+                            <a href="javascript:void(0);">购买咨询</a>
+                        </h4>
+                    </div>
+                    <div class="ncs-goods-info-content bd" id="ncGuestbook" style="">
+                        <!-- 咨询留言内容部分 -->
+                        <div id="consulting_demo" class="ncs-loading"> </div>
+                    </div>
+                </div>
+                <!-- shopwwi-->
+                <!--youce-->
+
+            </div>
+            <div class="ncs-sidebar">
+                <div class="ncs-sidebar-container shopwwi-look-look classShop">
+                    <div class="title">
+                        <h4>最新商品</h4>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt class="goods-pic">
+                                        <a href="javascript:;" target="_blank" title="">
+                                            <img src="javascript:;">
+                                        </a>
+                                    </dt>
+                                    <dd class="goods-name goods-name1">
+                                            <a href="javascript:;" target="_blank" title="紫皮洋葱 5斤装">紫皮洋葱 5斤装
+                                                <em>5斤大概有8-10个洋葱</em>
+                                            </a>
+                                        </dd>
+                                    <dd class="goods-price">¥14.90</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="ncs-sidebar-container ncs-top-bar shopwwi-look-look hotShop">
+                    <div class="title">
+                        <h4>热销商品</h4>
+                    </div>
+                    <div class="content">
+                        <!-- <ul class="ncs-top-tab pngFix">
+                            <li id="hot_sales_tab" class="current">
+                                <a href="http://www.hangowa.com/shop_view-15-0-3-2-0.html">热销TOP5</a>
+                            </li>
+                            <li id="hot_collect_tab">
+                                <a href="http://www.hangowa.com/shop_view-15-0-4-2-0.html">人气TOP5</a>
+                            </li>
+                        </ul> -->
+                        <div id="hot_sales_list" class="ncs-top-panel">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt class="goods-pic">
+                                            <a href="http://www.hangowa.com/item-104314.html" target="_blank" title="">
+                                                <img src="http://www.hangowa.com/data/upload/shop/store/goods/15/2018/15_05851434465031595_240.jpg">
+                                            </a>
+                                        </dt>
+                                        <dd class="goods-name goods-name1">
+                                                <a href="http://www.hangowa.com/item-104314.html" target="_blank" title="紫皮洋葱 5斤装">紫皮洋葱 5斤装
+                                                    <em>5斤大概有8-10个洋葱</em>
+                                                </a>
+                                            </dd>
+                                        <dd class="goods-price">¥14.90</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade modal1" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body pt-5 pl-5">
+                    <p id="alertMsg_info">
+                        <img style="height:50px;" src="images/tan.png" alt="">
+                        <span class="ml-5 pl-5">您尚未登录！</span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning text-white" onclick="backToURL()">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="./js/productDetails.js"></script>
+</body>
+
+</html>
